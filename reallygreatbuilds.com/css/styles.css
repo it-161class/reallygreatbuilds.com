@@ -1,0 +1,117 @@
+
+body {
+    background-color: #404040;
+}
+
+main {
+    position: relative;
+    width: 80%;
+}
+
+nav {
+    display: flex;
+    height: 300px;
+
+}
+section {
+    clear: both;
+}
+
+div.banner {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    min-height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+input {
+    background-color: grey;
+    color: white;
+}
+
+textarea {
+    background-color: grey;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 20px;
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+
+h1 {
+    margin: auto;
+    padding: 5px 20px;
+    color: #3142f7;
+}
+
+nav img {
+    position: relative;
+    height: 100%;
+}
+
+/* desktop */
+@media all and (min-width:1200px) {
+    .wrapper {
+        max-width: 1500px;
+        margin: auto;
+    }
+    .banner img {
+        width: 900px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav a {
+        margin: auto;
+        height: 100px;
+        padding: 10px 50px;
+        border: 3px  solid rgb(156, 170, 184);
+    }
+
+
+}
+/* tablet*/
+@media all and (min-width:501px) and (max-width: 1199px) {
+    .wrapper {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    nav a {
+        margin: auto;
+        height: 100px;
+        padding: 10px 50px;
+        border: 3px  solid rgb(156, 170, 184);
+    }
+
+}
+/* phone */
+@media all and (max-width:500px) {
+    .wrapper {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    nav a {
+        margin: auto;
+        height: 50px;
+        padding: 10px 50px;
+        border: 1px  solid rgb(156, 170, 184);
+    }
+
+}
